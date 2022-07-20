@@ -1,19 +1,7 @@
 /*
-dependency inversion principle
-explicação:
+index.test.ts => teste de integração
 
-módulos de auto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações
-
-dependa de abstrações não de implementações
-
-abstrações não devem depender de detalhes, detalhes devem depender de abstrações
-
-classes de baixo nível são classes que executam tarefas (os detalhes)
-classes de auto nível são classes que gerenciam as classes de baixo nível
-
-resumo
-
-
+index.spec.ts => teste unitário
 */
 
 import { Messaging } from './services/messaging';
