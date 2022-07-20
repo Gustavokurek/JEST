@@ -10,7 +10,7 @@ import { Persistency } from './services/persistency';
 import { Product } from './classes/product';
 import { ShoppingCart } from './classes/shopping-cart';
 import { NoDiscount } from './classes/discount';
-import { enterpriseCustomer } from './classes/costomer';
+import { enterpriseCustomer } from './classes/customer';
 
 const noDiscount = new NoDiscount();
 // const tenPercentDiscount = new TenPercentDiscount();
