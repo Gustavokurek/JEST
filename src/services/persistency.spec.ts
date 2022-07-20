@@ -1,6 +1,25 @@
-describe('testando alguma coisa', () => {
-  it('should return 1', () => {
-    const number = 1;
-    expect(number).toBe(1);
+import { Persistency } from './persistency';
+
+describe('persistency', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+  it('should return undefined', () => {
+    const sut = new Persistency();
+    expect(sut.saveOrder()).toBeUndefined();
+  });
+
+  it('should call console.log once', () => {
+    const sut = new Persistency();
+    const consoleSpy = jest.spyOn(console, 'log');
+    sut.saveOrder();
+    expect(consoleSpy).toHaveBeenCalledTimes(1);
+  });
+
+  it('should call console.log once witch pedido concluído', () => {
+    const sut = new Persistency();
+    const consoleSpy = jest.spyOn(console, 'log');
+    sut.saveOrder();
+    expect(consoleSpy).toHaveBeenCalledWith('pedido concluído');
   });
 });
