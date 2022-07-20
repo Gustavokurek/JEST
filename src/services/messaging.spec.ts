@@ -4,7 +4,7 @@ const createSut = () => {
   return new Messaging();
 };
 
-describe('persistency', () => {
+describe('messaging', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });

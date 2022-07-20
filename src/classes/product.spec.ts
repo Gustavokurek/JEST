@@ -4,11 +4,11 @@ const createSut = (name: string, price: number) => {
   return new Product(name, price);
 };
 
-describe('persistency', () => {
+describe('product', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
-  it('should return undefined', () => {
+  it('should have properties name and price', () => {
     const sut = createSut('camisa', 50.5);
     expect(sut.name).toBe('camisa');
     expect(sut.price).toBeCloseTo(50.5);
