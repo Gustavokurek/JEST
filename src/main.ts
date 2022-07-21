@@ -32,6 +32,10 @@ shoppingCart.addItem(new Product('livro', 89.5));
 shoppingCart.addItem(new Product('uniforme', 65));
 
 console.log(shoppingCart.items);
+console.log('#######');
+shoppingCart.removeItem(3);
+console.log(shoppingCart.items);
+console.log('#######');
 console.log(shoppingCart.totalWitchDiscount());
 order.checkout();
 console.log(order.orderStatus);
